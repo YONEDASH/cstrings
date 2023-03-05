@@ -6,10 +6,10 @@
 #include <stdarg.h>
 #include <errno.h>
 
-// Allocates a new string identical to given string
+// Allocates new string identical to given string
 char *strcopy(const char *str);
 
-// Allocates a new string which concatonates string 'append' and 'base'
+// Allocates new string which concatonates string 'append' and 'base'
 char *strconcat(const char *base, const char *append);
 
 // Tokenizes/splits given 'str' based on string 'token'
@@ -21,7 +21,7 @@ char *strreplace(char *str, const char *what, const char *with);
 // Allocates new string and formats (%...) with arguments
 char *strformat(const char *str, ...);
 
-// Allocates new string and caps it's length
+// Allocates new string and caps its length
 char *strsub(const char *str, size_t start, size_t end);
 
 // Allocates new string and inserts given string at given index
