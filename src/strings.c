@@ -1,6 +1,6 @@
 #include "strings.h"
 
-// Allocates a new string identical to given string
+// Allocates new string identical to given string
 char *strcopy(const char *str) {
     if (str == NULL) {
         return NULL;
@@ -141,7 +141,7 @@ char *strformat(const char *str, ...) {
     return result;
 }
 
-// Allocates new string and caps it's length
+// Allocates new string and caps its length
 char *strsub(const char *str, size_t start, size_t end) {
     size_t len = strlen(str);
     if (end > len) {
